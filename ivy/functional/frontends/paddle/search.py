@@ -92,6 +92,7 @@ def topk(x, k, axis=None, largest=True, sorted=True, name=None):
     {"2.5.1 and below": ("float32", "float64", "int32", "int64")},
     "paddle",
 )
+
 @to_ivy_arrays_and_back
 def mode(x, axis=None, keepdim=False, name=None):
     return ivy.mode(x, axis=axis, keepdim=keepdim, name=name)
